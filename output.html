@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>互联网速度</title>
+        <style>
+            .page {
+                width: 210mm;
+                height: 297mm;
+                margin: 20px auto;
+                padding: 15mm;
+                background: white;
+                box-shadow: 0 2px 5px #ccc;
+                overflow: hidden;
+                --scale: 1.5;
+                --right-scale: 1.8;
+                --card-gap: 0.8;
+                --min-scale: 0.7;
+                --min-card-gap: 0.3;
+            }
+            
+            .header {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10mm;
+                padding-bottom: 5mm;
+                border-bottom: 1px solid #eee;
+            }
+            .header h1 {
+                font-size: calc(16pt * var(--scale) * 0.8);
+                margin: 0;
+            }
+            .page-num {
+                font-size: calc(10pt * var(--scale) * 0.7);
+                color: #666;
+            }
+            
+            .content {
+                display: flex;
+                gap: 10mm;
+                height: calc(297mm - 80mm);
+                position: relative;
+            }
+            
+            .left {
+                flex: 5;
+                font-size: calc(12pt * var(--scale));
+                line-height: 1.8;
+                overflow: hidden;
+                position: relative;
+            }
+            .left p {
+                margin: 0 0 calc(5mm * var(--scale)) 0;
+                text-indent: 2em;
+                word-wrap: break-word;
+            }
+            .spacing {
+                height: calc(8mm * var(--scale));
+            }
+            .highlight {
+                background: #fff9c4;
+                padding: 0 2px;
+                font-weight: bold;
+            }
+            
+            .right {
+                flex: 4;
+                padding-left: 5mm;
+                border-left: 1px dashed #eee;
+                overflow: hidden;
+                position: relative;
+            }
+            .word-card {
+                margin-bottom: calc(10mm * var(--right-scale) * var(--card-gap));
+                padding: calc(5mm * var(--right-scale) * 0.8);
+                background: #f9f9f9;
+                border-radius: 4px;
+                word-wrap: break-word;
+            }
+            .word {
+                font-weight: bold;
+                font-size: calc(14pt * var(--right-scale));
+            }
+            .phonetic {
+                color: #0288d1;
+                font-size: calc(12pt * var(--right-scale));
+                margin: calc(2mm * var(--right-scale) * var(--card-gap)) 0;
+                font-style: italic;
+            }
+            .meaning {
+                color: #d32f2f;
+                font-size: calc(13pt * var(--right-scale));
+                margin: calc(2mm * var(--right-scale) * var(--card-gap)) 0;
+            }
+            .synonym {
+                color: #7b1fa2;
+                font-size: calc(13pt * var(--right-scale));
+                margin: calc(2mm * var(--right-scale) * var(--card-gap)) 0;
+            }
+            .no-words {
+                color: #999;
+                text-align: center;
+                margin-top: 20mm;
+                font-size: calc(12pt * var(--right-scale));
+            }
+            
+            @media print {
+                .page {
+                    width: 100%;
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                    box-shadow: none;
+                    page-break-after: always;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="page" data-page="1" style="--scale:1.5; --right-scale:1.8; --card-gap:0.8;">
+            <div class="header">
+                <h1>互联网速度</h1>
+                <div class="page-num">第1/6页</div>
+            </div>
+            <div class="content">
+                <div class="left"><p>互联网速度</p><p class="spacing"></p><p>America's <span class="highlight">Internet</span> is faster than ever before, but people still <span class="highlight">complain</span> about their <span class="highlight">Internet</span> being too slow.美国的网速比以往任何时候都快，但人们仍在抱怨自家网速太慢。</p></div>
+                <div class="right">
+            <div class="word-card">
+                <div class="word">Internet</div>
+                <div class="phonetic">[/ˈɪntənet/]</div>
+                <div class="meaning">意思：n. 互联网</div>
+                <div class="synonym">同义词：surf the Internet（上网）, Internet speed（网速）</div>
+            </div>
+            
+            <div class="word-card">
+                <div class="word">complain</div>
+                <div class="phonetic">[/kəmˈpleɪn/]</div>
+                <div class="meaning">意思：v. 抱怨；投诉</div>
+                <div class="synonym">同义词：complain about sth.（抱怨某事）, complain to sb.（向某人投诉）</div>
+            </div>
+            </div>
+            </div>
+        </div>
+        
+        <div class="page" data-page="2" style="--scale:1.5; --right-scale:1.8; --card-gap:0.8;">
+            <div class="header">
+                <h1>互联网速度</h1>
+                <div class="page-num">第2/6页</div>
+            </div>
+            <div class="content">
+                <div class="left"><p>纽约州总检察长办公室于秋季发起了一项调查，调查威瑞森（<span class="highlight">Verizon</span>）、有线电视视野公司（<span class="highlight">Cablevision</span>）和时代华纳（Time <span class="highlight">Warner</span>）这几家运营商提供的宽带网速，是否达到了其宣传的水平。本月早些时候，该办公室呼吁公众协助测量网速，称消费者理应获得运营商承诺的网速。“我们中有太多人可能付了钱，得到的却是另一种服务，”总检察长表示。</p></div>
+                <div class="right">
+            <div class="word-card">
+                <div class="word">Verizon</div>
+                <div class="phonetic">[/vəˈraɪzən/]</div>
+                <div class="meaning">意思：n. 威瑞森（美国电信运营商）</div>
+                <div class="synonym">同义词：Verizon broadband（威瑞森宽带）</div>
+            </div>
+            
+            <div class="word-card">
+                <div class="word">Cablevision</div>
+                <div class="phonetic">[/ˈkeɪblˌvɪʒn/]</div>
+                <div class="meaning">意思：n. 有线电视视野公司（美国企业）</div>
+                <div class="synonym">同义词：Cablevision services（有线电视视野公司的服务）</div>
+            </div>
+            
+            <div class="word-card">
+                <div class="word">Warner</div>
+                <div class="phonetic">[/ˈwɔːnə/]</div>
+                <div class="meaning">意思：n. 华纳（美国媒体集团）</div>
+                <div class="synonym">同义词：Time Warner（时代华纳，美国媒体与电信集团）</div>
+            </div>
+            </div>
+            </div>
+        </div>
+        
+        <div class="page" data-page="3" style="--scale:1.5; --right-scale:1.8; --card-gap:0.8;">
+            <div class="header">
+                <h1>互联网速度</h1>
+                <div class="page-num">第3/6页</div>
+            </div>
+            <div class="content">
+                <div class="left"><p>New York's <span class="highlight">Attorney</span> General's <span class="highlight">office</span> launched an <span class="highlight">investigation</span> in the fall into whether or not <span class="highlight">Verizon</span>, <span class="highlight">Cablevision</span> and Time <span class="highlight">Warner</span> are delivering broadband that's as fast as the providers advertise it is. Earlier this month, the <span class="highlight">office</span> asked for the public's help to measure their speed results, saying consumers deserve to get the speeds they were promised. “Too many of us may be paying for one thing, and getting another,” the <span class="highlight">Attorney</span> General said.</p></div>
+                <div class="right">
+            <div class="word-card">
+                <div class="word">Attorney</div>
+                <div class="phonetic">[/əˈtɜːni/]</div>
+                <div class="meaning">意思：n. 律师；（美国）检察官</div>
+                <div class="synonym">同义词：attorney at law（律师）, state attorney（州检察官）</div>
+            </div>
+            
+            <div class="word-card">
+                <div class="word">office</div>
+                <div class="phonetic">[/ˈɒfɪs/]</div>
+                <div class="meaning">意思：n. 办公室；（政府或机构的）部门</div>
+                <div class="synonym">同义词：government office（政府部门）, office worker（办公室职员）</div>
+            </div>
+            
+            <div class="word-card">
+                <div class="word">investigation</div>
+                <div class="phonetic">[/ɪnˌvestɪˈɡeɪʃn/]</div>
+                <div class="meaning">意思：n. 调查；侦查</div>
+                <div class="synonym">同义词：launch an investigation（发起调查）, conduct an investigation（开展调查）</div>
+            </div>
+            
+            <div class="word-card">
+                <div class="word">Verizon</div>
+                <div class="phonetic">[/vəˈraɪzən/]</div>
+                <div class="meaning">意思：n. 威瑞森（美国电信运营商）</div>
+                <div class="synonym">同义词：Verizon broadband（威瑞森宽带）</div>
+            </div>
+            
+            <div class="word-card">
+                <div class="word">Cablevision</div>
+                <div class="phonetic">[/ˈkeɪblˌvɪʒn/]</div>
+                <div class="meaning">意思：n. 有线电视视野公司（美国企业）</div>
+                <div class="synonym">同义词：Cablevision services（有线电视视野公司的服务）</div>
+            </div>
+            
+            <div class="word-card">
+                <div class="word">Warner</div>
+                <div class="phonetic">[/ˈwɔːnə/]</div>
+                <div class="meaning">意思：n. 华纳（美国媒体集团）</div>
+                <div class="synonym">同义词：Time Warner（时代华纳，美国媒体与电信集团）</div>
+            </div>
+            </div>
+            </div>
+        </div>
+        
+        <div class="page" data-page="4" style="--scale:1.5; --right-scale:1.8; --card-gap:0.8;">
+            <div class="header">
+                <h1>互联网速度</h1>
+                <div class="page-num">第4/6页</div>
+            </div>
+            <div class="content">
+                <div class="left"><p>即便此次调查真的发现了问题，这也并非电信运营商首次因“承诺网速与实际提供给用户的网速不符”陷入麻烦。早在今年6月，美国联邦通信委员会（FCC）就以“AT&T在用户消耗一定量数据后，秘密降低无线网速”的指控为由，对该公司处以1亿美元罚款。</p><p class="spacing"></p><p>If the <span class="highlight">investigation</span> <span class="highlight">uncovers</span> anything, it wouldn't be the first time a <span class="highlight">telecom</span> provider got into trouble over the <span class="highlight">broadband</span> speeds it <span class="highlight">promised</span> and <span class="highlight">delivered</span> to customers. Back in June, the Federal Communications Commission fined AT&T $100 million over allegations that the carrier secretly reduced wireless speeds after customers consumed a certain amount of data.</p></div>
+                <div class="right">
+            <div class="word-card">
+                <div class="word">investigation</div>
+                <div class="phonetic">[/ɪnˌvestɪˈɡeɪʃn/]</div>
+                <div class="meaning">意思：n. 调查；侦查</div>
+                <div class="synonym">同义词：launch an investigation（发起调查）, conduct an investigation（开展调查）</div>
+            </div>
+            
+            <div class="word-card">
+                <div class="word">uncovers</div>
+                <div class="phonetic">[/ʌnˈkʌvəz/]</div>
+                <div class="meaning">意思：v. 发现；揭露（uncover 的第三人称单数）</div>
+                <div class="synonym">同义词：uncover the truth（揭露真相）, uncover a problem（发现问题）</div>
+            </div>
+            
+            <div class="word-card">
+                <div class="word">telecom</div>
+                <div class="phonetic">[/ˈtelikɒm/]</div>
+                <div class="meaning">意思：n. 电信（telecommunication 的缩写）</div>
+                <div class="synonym">同义词：telecom provider（电信运营商）, telecom industry（电信行业）</div>
+            </div>
+            
+            <div class="word-card">
+                <div class="word">broadband</div>
+                <div class="phonetic">[/ˈbrɔːdbænd/]</div>
+                <div class="meaning">意思：n. 宽带（网络）</div>
+                <div class="synonym">同义词：broadband Internet（宽带互联网）, high-speed broadband（高速宽带）</div>
+            </div>
+            
+            <div class="word-card">
+                <div class="word">promised</div>
+                <div class="phonetic">[/ˈprɒmɪst/]</div>
+                <div class="meaning">意思：adj. 承诺过的；约定的；v. 承诺；答应（promise 的过去分词 / 过去式）</div>
+                <div class="synonym">同义词：promised speed（承诺的网速）, promise to do sth.（承诺做某事）</div>
+            </div>
+            
+            <div class="word-card">
+                <div class="word">delivered</div>
+                <div class="phonetic">[/dɪˈlɪvəd/]</div>
+                <div class="meaning">意思：v. 提供；递送（deliver 的过去分词 / 过去式）</div>
+                <div class="synonym">同义词：delivered speed（实际提供的网速）, deliver to sb.（递送给某人）</div>
+            </div>
+            </div>
+            </div>
+        </div>
+        
+        <div class="page" data-page="5" style="--scale:1.5; --right-scale:1.8; --card-gap:0.8;">
+            <div class="header">
+                <h1>互联网速度</h1>
+                <div class="page-num">第5/6页</div>
+            </div>
+            <div class="content">
+                <div class="left"><p>即便运营商遵守法律规定，它们在带宽速度和资费问题上仍会引发用户不满。就在本周，一项调查显示，媒体与电信巨头康卡斯特（<span class="highlight">Comcast</span>）是被投诉最多的运营商。在10个月内，康卡斯特收到了近1.2万起用户投诉，其中不少都与该公司的月度数据上限及超额收费有关。</p><p class="spacing"></p><p>Even when they stay on the right side of the law, <span class="highlight">Internet</span> providers arouse <span class="highlight">customers</span>' anger over <span class="highlight">bandwidth</span> <span class="highlight">speed</span> and cost. Just this week, an <span class="highlight">investigation</span> found that media and telecom giant <span class="highlight">Comcast</span> is the most complained-about provider. Over 10 months, <span class="highlight">Comcast</span> received nearly 12,000 customer complaints, many relating to its monthly data cap and overage charges.</p></div>
+                <div class="right">
+            <div class="word-card">
+                <div class="word">Comcast</div>
+                <div class="phonetic">[/kəmˈkæst/]</div>
+                <div class="meaning">意思：n. 康卡斯特（美国电信与媒体公司）</div>
+                <div class="synonym">同义词：Comcast customers（康卡斯特用户）</div>
+            </div>
+            
+            <div class="word-card">
+                <div class="word">Internet</div>
+                <div class="phonetic">[/ˈɪntənet/]</div>
+                <div class="meaning">意思：n. 互联网</div>
+                <div class="synonym">同义词：surf the Internet（上网）, Internet speed（网速）</div>
+            </div>
+            
+            <div class="word-card">
+                <div class="word">customers</div>
+                <div class="phonetic">[/ˈkʌstəməz/]</div>
+                <div class="meaning">意思：n. 顾客；用户（customer 的复数）</div>
+                <div class="synonym">同义词：telecom customers（电信用户）, serve customers（服务顾客）</div>
+            </div>
+            
+            <div class="word-card">
+                <div class="word">bandwidth</div>
+                <div class="phonetic">[/ˈbændwɪdθ/]</div>
+                <div class="meaning">意思：n. 带宽（网络传输数据的能力）</div>
+                <div class="synonym">同义词：bandwidth speed（带宽速度）, high bandwidth（高带宽）</div>
+            </div>
+            
+            <div class="word-card">
+                <div class="word">speed</div>
+                <div class="phonetic">[/spiːd/（n.）/spiːd/（v.）]</div>
+                <div class="meaning">意思：n. 速度；速率；v. 加速</div>
+                <div class="synonym">同义词：Internet speed（网速）, high speed（高速）</div>
+            </div>
+            
+            <div class="word-card">
+                <div class="word">investigation</div>
+                <div class="phonetic">[/ɪnˌvestɪˈɡeɪʃn/]</div>
+                <div class="meaning">意思：n. 调查；侦查</div>
+                <div class="synonym">同义词：launch an investigation（发起调查）, conduct an investigation（开展调查）</div>
+            </div>
+            </div>
+            </div>
+        </div>
+        
+        <div class="page" data-page="6" style="--scale:1.5; --right-scale:1.8; --card-gap:0.8;">
+            <div class="header">
+                <h1>互联网速度</h1>
+                <div class="page-num">第6/6页</div>
+            </div>
+            <div class="content">
+                <div class="left"><p>一些美国人对互联网运营商已感到极度失望，以至于选择放弃使用（付费宽带）。近期一项研究发现，过去两年间，美国家庭高速互联网的用户数量实际上出现了下降，目前有15%的人自认为是“断网族”（指放弃订阅传统付费宽带/有线电视服务的人群）。</p><p class="spacing"></p><p>Some Americans are getting so frustrated with <span class="highlight">Internet</span> providers they're just giving up. A recent study found that the number of Americans with high-<span class="highlight">speed</span> <span class="highlight">Internet</span> at home today actually fell during the last two years, and 15％ of people now consider themselves to be “<span class="highlight">cord</span>-<span class="highlight">cutters</span>.”</p></div>
+                <div class="right">
+            <div class="word-card">
+                <div class="word">Internet</div>
+                <div class="phonetic">[/ˈɪntənet/]</div>
+                <div class="meaning">意思：n. 互联网</div>
+                <div class="synonym">同义词：surf the Internet（上网）, Internet speed（网速）</div>
+            </div>
+            
+            <div class="word-card">
+                <div class="word">speed</div>
+                <div class="phonetic">[/spiːd/（n.）/spiːd/（v.）]</div>
+                <div class="meaning">意思：n. 速度；速率；v. 加速</div>
+                <div class="synonym">同义词：Internet speed（网速）, high speed（高速）</div>
+            </div>
+            
+            <div class="word-card">
+                <div class="word">cord</div>
+                <div class="phonetic">[/kɔːd/]</div>
+                <div class="meaning">意思：n. 电线；线缆</div>
+                <div class="synonym">同义词：cord-cutting断网，剪断网线, power cord电源线</div>
+            </div>
+            
+            <div class="word-card">
+                <div class="word">cutters</div>
+                <div class="phonetic">[/ˈkʌtəz/]</div>
+                <div class="meaning">意思：n. 切断者；裁剪者（cutter 的复数，文中 “cord-cutters” 指 “断网族”）</div>
+                <div class="synonym">同义词：cord-cutters（断网族，放弃付费宽带 / 有线电视的用户）</div>
+            </div>
+            </div>
+            </div>
+        </div>
+        
+        
+        <script>
+            window.addEventListener('load', function() {
+                const pages = document.querySelectorAll('.page');
+                pages.forEach(page => adjustPageLayout(page));
+            });
+            
+            function adjustPageLayout(page) {
+                const rightSection = page.querySelector('.right');
+                const leftSection = page.querySelector('.left');
+                
+                adjustRightSection(page, rightSection);
+                adjustLeftSection(page, leftSection);
+            }
+            
+            function adjustRightSection(page, rightSection) {
+                let cardGap = parseFloat(getComputedStyle(page).getPropertyValue('--card-gap'));
+                let rightScale = parseFloat(getComputedStyle(page).getPropertyValue('--right-scale'));
+                const minCardGap = parseFloat(getComputedStyle(page).getPropertyValue('--min-card-gap'));
+                const minScale = parseFloat(getComputedStyle(page).getPropertyValue('--min-scale'));
+                const gapStep = 0.05;
+                const scaleStep = 0.05;
+                
+                while (isOverflowing(rightSection) && cardGap > minCardGap) {
+                    cardGap = Math.max(cardGap - gapStep, minCardGap);
+                    page.style.setProperty('--card-gap', cardGap.toFixed(2));
+                    forceRepaint(rightSection);
+                }
+                
+                while (isOverflowing(rightSection) && rightScale > minScale) {
+                    rightScale = Math.max(rightScale - scaleStep, minScale);
+                    page.style.setProperty('--right-scale', rightScale.toFixed(2));
+                    forceRepaint(rightSection);
+                }
+            }
+            
+            function adjustLeftSection(page, leftSection) {
+                let leftScale = parseFloat(getComputedStyle(page).getPropertyValue('--scale'));
+                const minScale = parseFloat(getComputedStyle(page).getPropertyValue('--min-scale'));
+                const scaleStep = 0.05;
+                
+                while (isOverflowing(leftSection) && leftScale > minScale) {
+                    leftScale = Math.max(leftScale - scaleStep, minScale);
+                    page.style.setProperty('--scale', leftScale.toFixed(2));
+                    forceRepaint(leftSection);
+                }
+            }
+            
+            function isOverflowing(element) {
+                return element.scrollHeight > element.offsetHeight || 
+                       element.scrollWidth > element.offsetWidth;
+            }
+            
+            function forceRepaint(element) {
+                element.offsetHeight;
+            }
+        </script>
+    </body>
+    </html>
