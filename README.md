@@ -16,22 +16,23 @@
 2. picture.py
 
 - 用于将html得到的pdf文件 **output.pdf** ，变成高清的图片，调节dpi,600-800即可。
+- 如何获得output.pdf文件？使用浏览器打开html文件，打印即可（搜索：如何用浏览器打印成pdf模式）
 
 
 - pdf-maker.py 最初版本，基本没用了。
 
 3. 制作效果
 
-例子1
+- 例子1
 
 https://luckyme258.github.io/%E9%9B%85%E6%80%9D/Why%20Did%20a%20$10%20Billion%20Startup%20Let%20Me%20Vibe-Code%20for%20Them%E2%80%94and%20Why%20Did%20I%20Love%20It.html
 
 
-例子2
+- 例子2
 
 https://luckyme258.github.io/%E5%9B%9B%E7%BA%A7/%E8%8B%B1%E8%AF%AD%E5%9B%9B%E7%BA%A7-1-%E7%BD%91%E7%BB%9C%E9%80%9F%E5%BA%A6.html
 
-总目录
+- 总目录
 
 https://luckyme258.github.io/
 
