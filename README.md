@@ -36,3 +36,7 @@ https://luckyme258.github.io/%E5%9B%9B%E7%BA%A7/%E8%8B%B1%E8%AF%AD%E5%9B%9B%E7%B
 
 https://luckyme258.github.io/
 
+4. 补充脚本 find-useful-pages.py
+
+
+该脚本可自动读取同级`output.html`文件，识别并以“连续页码用-、非连续用、分隔”的格式，输出其中“右侧区域含单词卡片”的页码，无需人工逐页查看。
